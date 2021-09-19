@@ -9,7 +9,7 @@ id_ride,lat,lng,timestamp
 
 ## Usage
 
-CSV input is read from stdin, Output is written to stdout (inspired by the Unix `cpio` command).
+CSV input is read from stdin, output is written to stdout (inspired by the Unix `cpio` command).
 
 Example:
 
@@ -27,7 +27,7 @@ go test ./...
 
 ### Structure
 
-- Project root contains the domain rules and entities, as well as some helper methods and structs.
+- Project root contains the domain rules and entities, as well as some helper methods and structs
 - `./cmd` contains the main executable code and a simple integration test
 - `./rawridefetcher` contains the component responsible for reading the source and ride aggregation by id
 - `./fareestimator` contains the core logic, agnostic to input and output formats. This is where the fare calculation is performed
